@@ -1,1 +1,3 @@
-# remember to use comments!
+#hello
+print("hello demetri")
+#did this work
