@@ -26,6 +26,7 @@ def move_pen(x_coordinate, y_coordinate):
 
 # each of these lines executes one of the two funtions. the parameters for the draw_an_octagon lines control the color and the size of the octagons, while the move_pen parameters have the x and y coordinates for the octagons.
 # the octagons are all roughly 240 pixels wide, so they all start at variations of 250 so there are 10 pixels between each octagon.
+#if you want to change the color, the size, or the location of the octagons you would edit those here.
 draw_an_octagon("red", 100)
 move_pen(0, 250)
 draw_an_octagon("gold", 100)
