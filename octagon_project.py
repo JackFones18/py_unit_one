@@ -15,11 +15,10 @@ def move_pen(x_coordinate,y_coordinate):
 
 
 draw_an_octogon("blue",100)
-move_pen()
+move_pen(0,250)
 draw_an_octogon("red", 100)
-move_pen()
+move_pen(-250,250)
 draw_an_octogon("yellow", 100)
-move_pen()
+move_pen(-250,-0)
 draw_an_octogon("pink", 100)
-move_pen()
 turtle.exitonclick()
