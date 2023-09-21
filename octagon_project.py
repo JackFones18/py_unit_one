@@ -3,8 +3,8 @@ import turtle
 
 def draw_an_octagon(color, size):
     turtle.begin_fill()
+    turtle.color(color)
     for x in range(8):
-        turtle.color(color)
         turtle.forward(size)
         turtle.right(45)
     turtle.end_fill()
