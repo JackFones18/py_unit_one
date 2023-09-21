@@ -7,12 +7,19 @@ def draw_an_octogon(color,size):
         turtle.forward(size)
         turtle.right(45)
     turtle.end_fill()
-    turtle.left(90)
+
+def move_pen(x_coordinate,y_coordinate):
     turtle.penup()
-    turtle.forward(200)
+    turtle.goto(x_coordinate,y_coordinate)
     turtle.pendown()
 
+
 draw_an_octogon("blue",100)
-draw_an_octogon("red", 50)
-draw_an_octogon("yellow", 200)
+move_pen()
+draw_an_octogon("red", 100)
+move_pen()
+draw_an_octogon("yellow", 100)
+move_pen()
+draw_an_octogon("pink", 100)
+move_pen()
 turtle.exitonclick()
