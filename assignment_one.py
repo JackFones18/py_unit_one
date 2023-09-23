@@ -7,6 +7,11 @@
 import turtle
 
 
+#these lines make the pen look like a real turtle, as well as making it bigger and making it move backwards, for fun.
+turtle.shape("turtle")
+turtle.turtlesize(3)
+turtle.tilt(180)
+
 # these lines create a function that actually makes an octagon.
 # the paramaters control the length of each line and the color of the octagon.
 def draw_an_octagon(color, size):
@@ -16,7 +21,6 @@ def draw_an_octagon(color, size):
         turtle.forward(size)
         turtle.right(45)
     turtle.end_fill()
-
 
 # these lines crate a funtion that moves the pen to the next coordinate. This decides where the next octagon will be.
 def move_pen(x_coordinate, y_coordinate):
@@ -39,5 +43,8 @@ draw_an_octagon("green", 100)
 move_pen(-250, -0)
 draw_an_octagon("blue", 100)
 
-# this line keeps the window open so it doesnt close automatically after the octagons are done being drawn.
+#this line makes the turtle dissapear so the octagons are easier to see at the end
+turtle.hideturtle()
+
+# this line keeps the window open so it doesn't close automatically after the octagons are done being drawn.
 turtle.exitonclick()
