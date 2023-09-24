@@ -43,7 +43,23 @@ draw_an_octagon("green", 100)
 move_pen(-250, -0)
 draw_an_octagon("blue", 100)
 
-#this line makes the turtle dissapear so the octagons are easier to see at the end
+#i made the red octagon into a stop sign because i was bored
+move_pen(-55,-165)
+turtle.color("white")
+turtle.write("STOP", align="left", font=('Arial',60,'bold'))
+
+#the next 10 or so lines make a little diamond in the center because again, i was bored.
+turtle.color("black")
+move_pen(-3,5)
+turtle.left(135)
+
+turtle.begin_fill()
+for x in range(4):
+    turtle.forward(100)
+    turtle.left(90)
+turtle.end_fill()
+
+#this line hides the turtle so it's easier to see the octagons
 turtle.hideturtle()
 
 # this line keeps the window open so it doesn't close automatically after the octagons are done being drawn.
