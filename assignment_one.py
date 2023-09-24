@@ -50,7 +50,7 @@ turtle.write("STOP", align="left", font=('Arial',60,'bold'))
 
 #the next 10 or so lines make a little diamond in the center because again, i was bored.
 turtle.color("black")
-move_pen(-3,5)
+move_pen(-4,4)
 turtle.left(135)
 
 turtle.begin_fill()
